@@ -39,14 +39,14 @@ body {
 
 @keyframes text-switch {
   0%, 19% {
-    content: "Inhala";
+    content: "Inhala (4s)";
   }
 
   20%, 55% {
-    content: "Mantén la respiración";
+    content: "Mantén la respiración (7s)";
   }
 
   56%, 100% {
-    content: "Exhala por la boca frunciendo los labios y haciendo ruido";
+    content: "Exhala por la boca frunciendo los labios y haciendo ruido (8s)";
   }
 }

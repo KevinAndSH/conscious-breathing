@@ -40,18 +40,18 @@ body {
 
 @keyframes text-switch {
   0%, 32% {
-    content: "Inhala";
+    content: "Inhala (8s)";
   }
 
   33%, 50% {
-    content: "Mantén la respiración, y cambia de fosa nasal";
+    content: "Mantén la respiración (4s), y cambia de fosa nasal";
   }
 
   51%, 82% {
-    content: "Exhala";
+    content: "Exhala (8s)";
   }
 
   83%, 100% {
-    content: "Haz una pausa";
+    content: "Haz una pausa (4s)";
   }
 }
