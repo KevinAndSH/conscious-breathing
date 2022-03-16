@@ -35,7 +35,7 @@ body {
 
 .app::after {
   content: "Vacía tus pulmones y tapa con el pulgar uno de los orificios de la nariz";
-  animation: text-switch 24s infinite ease-in-out 4s;
+  animation: text-switch 24s infinite 4s;
 }
 
 @keyframes text-switch {

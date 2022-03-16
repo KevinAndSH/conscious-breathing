@@ -34,7 +34,7 @@ body {
 
 .app::after {
   content: "Vacia tus pulmones y mantén la punta de la lengua en el paladar, detrás de los incisivos superiores";
-  animation: text-switch 20s 4 ease-in-out 4s;
+  animation: text-switch 20s infinite ease-in-out 4s;
 }
 
 @keyframes text-switch {
