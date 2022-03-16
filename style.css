@@ -23,9 +23,11 @@ body {
   background-color: hsl(210, 90%, 54%);
 
   height: 100vh;
+  padding: 1em;
 
   font-family: Arial;
   color: #eee;
+  text-align: center;
 }
 
 .app {
@@ -59,5 +61,5 @@ body {
 
 .app::after {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
