@@ -1,0 +1,57 @@
+body {
+  --inhale-time: 8s;
+  --hold-time: 4s;
+  --exhale-time: 8s;
+  --pause-time: 4s;
+}
+
+.inner-circle {
+  animation: prepare 4s infinite, breathe 24s infinite 4s ease-in-out;
+}
+
+@keyframes prepare {
+  0% {
+    transform: scale(10);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  33%, 50% {
+    transform: scale(10);
+  }
+
+  83%, 100% {
+    transform: scale(1);
+  }
+}
+
+.app::after {
+  content: "Vacía tus pulmones y tapa con el pulgar uno de los orificios de la nariz";
+  animation: text-switch 24s 4 ease-in-out 4s;
+}
+
+@keyframes text-switch {
+  0%, 32% {
+    content: "Inhala";
+  }
+
+  33%, 50% {
+    content: "Mantén la respiración, y cambia de fosa nasal";
+  }
+
+  51%, 82% {
+    content: "Exhala";
+  }
+
+  83%, 100% {
+    content: "Haz una pausa";
+  }
+}

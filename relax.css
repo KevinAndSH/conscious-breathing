@@ -1,0 +1,52 @@
+body {
+  --inhale-time: 4s;
+  --hold-time: 7s;
+  --exhale-time: 8s;
+}
+
+.inner-circle {
+  animation: prepare 4s infinite ease-in-out, breathe 20s infinite ease-in-out 4s;
+}
+
+@keyframes prepare {
+  0% {
+    transform: scale(10);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  20%, 55% {
+    transform: scale(10);
+  }
+
+  95%, 100% {
+    transform: scale(1);
+  }
+}
+
+.app::after {
+  content: "Vacia tus pulmones y mantén la punta de la lengua en el paladar, detrás de los incisivos superiores";
+  animation: text-switch 20s 4 ease-in-out 4s;
+}
+
+@keyframes text-switch {
+  0%, 19% {
+    content: "Inhala";
+  }
+
+  20%, 55% {
+    content: "Mantén la respiración";
+  }
+
+  56%, 100% {
+    content: "Exhala por la boca frunciendo los labios y haciendo ruido";
+  }
+}

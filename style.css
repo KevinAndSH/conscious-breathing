@@ -1,0 +1,52 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(210, 90%, 54%);
+
+  height: 100vh;
+
+  font-family: Arial;
+  color: #eee;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.outer-circle {
+  --outer-diameter: 300px;
+  width: var(--outer-diameter);
+  height: var(--outer-diameter);
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, .2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  --inner-diameter: 10%;
+  transform: scale(10);
+  width: var(--inner-diameter);
+  height: var(--inner-diameter);
+  border-radius: 50%;
+  background-color: white;
+}
+
+.app::after {
+  text-align: center;
+  font-size: 2em;
+}
